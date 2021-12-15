@@ -34,6 +34,12 @@ a {
     color: var(--code-color);
 }
 
+.fab{
+    color: var(--code-color);
+}
+.logo{
+    font-weight: 900;
+}
 
 /* --------------------------------- header ------------------------------------- */
 
@@ -208,6 +214,13 @@ a {
     background-size: contain;
     background-repeat: no-repeat;
 }
+.list6 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(assets/yellowBird.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 
 
 /* ----------------------------------------------

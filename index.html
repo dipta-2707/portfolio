@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="icon" class="fab" type="image/x-icon" href="./assets/dlogo.svg">
     <!-- ---------------------boostrap cdn------------------ -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <!-- ------------------------------ font awesome cdn----------------------------- -->
@@ -22,9 +22,9 @@
     <!-- -----------------------------navigation-------------------------------- -->
     <nav class="navbar fixed-top navbar-expand-lg  bg-light">
         <div class="container">
-            <a class="navbar-brand nav-hover-e" href="#">Dipta</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <a class="navbar-brand nav-hover-e" href="#"><i class="fab fa-dyalog logo"></i>ipta</a>
+            <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
           </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0  d-flex justify-content-end ">
@@ -150,6 +150,20 @@
 
                 </div>
             </div>
+            <div class="col-12 projects-list-div list6">
+                <div class="projects-list-number">
+                    <h1 style="font-size: 84px;">06</h1>
+                </div>
+                <div class="projects-list-content d-flex  align-items-center">
+                    <div>
+                        <h2 style="color: white;  font-weight: 600; font-size: 2em;">Yellow Bird</h2>
+                        <p style="color: gray;">// this is a casual bird game projects</p>
+                        <p class="d-inline link-color">Unity c#</p>
+                        <a class="link-color" target="_blank" href="">download</a>
+                    </div>
+
+                </div>
+            </div>
         </div>
         <h1 class="tag" id="skills-id">}</h1>
     </section>
@@ -216,11 +230,12 @@
         <div class="container row align-items-center">
             <div class="form col-sm-12 col-lg-6">
                 <h1 class="text-center">Say hi</h1>
-                <form action="controller.php" method="POST" class="d-flex flex-column form-control border-0">
-                    <input name="full_name" id="full_name" class="mt-2 p-2" type="text" placeholder="Full Name" required>
+                <form action="https://formsubmit.co/dipta35-2707@diu.edu.bd" method="POST" class="d-flex flex-column form-control border-0">
+                    <input name="name" id="full_name" class="mt-2 p-2" type="text" placeholder="Full Name" required>
+                    <input type="hidden" name="_subject" value="Mail From Protofolio!">
                     <input name="email" class="mt-2 p-2" type="email" placeholder="Email" required>
                     <textarea class="mt-2 p-2" name="message" id="message" cols="30" rows="10" placeholder="message" required></textarea>
-                    <button class="mt-2 p-2" type="button" onclick="sendMail()">send</button>
+                    <button class="mt-2 p-2" type="submit">send</button>
                 </form>
             </div>
             <div class="get-touch col-sm-12 col-lg-6 text-center">
@@ -228,7 +243,7 @@
                 <div class="icon">
                     <a target="_black" href="https://www.linkedin.com/in/dipta-das-254a42183/"><i class="fab fa-linkedin fav-style"></i></a>
                     <a target="_black" href="https://github.com/dipta-2707"><i class="fab fa-github-square fav-style"></i></a>
-                    <a target="_black" href="https://discord.gg/kF3Euz5H"><i class="fab fa-discord fav-style"></i></a>
+                    <a target="_black" onclick="navigator.clipboard.writeText('Dipto#9789');"><i class="fab fa-discord fav-style"></i></a>
                 </div>
 
             </div>
@@ -247,15 +262,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
     </script>
     <!-- -------------------------- gsap script------------------------- -->
-    <script>
-        function sendMail() {
-            let subject = document.getElementById('full_name').value;
-            let body = document.getElementById('message').value;
-            let link = "mailto:dipta35-2707@diu.edu.bd?subject=" + subject + "&body=" + body;
-            console.log(link);
-            window.open(link);
-        }
-    </script>
+
     <script>
         gsap.registerPlugin(ScrollTrigger);
         gsap.to(".about-me-c", {
